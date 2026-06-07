@@ -3,8 +3,8 @@
 #include <string>
 #include <cstdlib>
 #include <ctime>
-#include <conio.h>   
-#include <windows.h> 
+#include <conio.h>   // Library Windows untuk _getch()
+#include <windows.h> // Library Windows untuk kontrol konsol (Sleep, dll)
 
 using namespace std;
 
@@ -240,8 +240,8 @@ int main() {
     player.mp = player.maxMp = 40;
     player.skills = {
         {"Serangan Fisik", PHYSICAL, 12, 0},
-        {"Sihir Api (Agi)", FIRE, 20, 8},
-        {"Sihir Es (Bufu)", ICE, 20, 8}
+        {"Sihir Api (Pernapasan Api)", FIRE, 20, 8},
+        {"Sihir Es (Ice Shard)", ICE, 20, 8}
     };
 
     // Tentukan stage awal menggunakan pointer
